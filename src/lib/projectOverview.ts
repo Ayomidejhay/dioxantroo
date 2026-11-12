@@ -171,9 +171,10 @@ export class ProjectOverviewStateMachine {
       this.verifiedPillars.add(this.activePillarId);
       this.loadingState = "success";
       return true;
-    } catch (err: any) {
+    } catch (err: unknown) {
       this.loadingState = "error";
-      this.errorMessage = err.message || "Failed to verify objective metrics.";
+      this.errorMessage =
+        err instanceof Error ? err.message : "Failed to verify objective metrics.";
       return false;
     }
   }

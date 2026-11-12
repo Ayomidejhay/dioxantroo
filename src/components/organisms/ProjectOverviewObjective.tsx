@@ -55,9 +55,11 @@ export const ProjectOverviewObjective: React.FC<ProjectOverviewObjectiveProps> =
 
       setVerifiedPillars((prev) => ({ ...prev, [activePillarId]: true }));
       setLoadingState("success");
-    } catch (err: any) {
+    } catch (err: unknown) {
       setLoadingState("error");
-      setErrorMessage(err.message || "Failed to verify objective metrics.");
+      setErrorMessage(
+        err instanceof Error ? err.message : "Failed to verify objective metrics."
+      );
     }
   };
 

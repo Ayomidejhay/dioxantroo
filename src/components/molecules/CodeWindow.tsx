@@ -23,8 +23,8 @@ export const CodeWindow: React.FC<CodeWindowProps> = ({
       await navigator.clipboard.writeText(code);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // fallback
+    } catch (err: unknown) {
+      console.warn("Clipboard write failed:", err instanceof Error ? err.message : String(err));
     }
   };
 
