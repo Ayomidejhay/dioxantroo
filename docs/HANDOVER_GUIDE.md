@@ -88,6 +88,12 @@ src/
 | `onVerify` | `(pillarId: ObjectiveKey) => Promise<boolean>` | `undefined` | Custom async telemetry verification handler |
 | `simulateFailureDefault` | `boolean` | `false` | Default failure simulation toggle state |
 
+### 3.5 `ArchitecturalBriefSection`
+| Prop | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| `initialConfig` | `DioxantroBriefConfig` | `DIOXANTRO_ARCHITECTURAL_BRIEF` | Strict brief configuration matching all specifications |
+| `className` | `string` | `undefined` | Optional container CSS class |
+
 ---
 
 ## 4. Local Environment Setup & Run Guide
