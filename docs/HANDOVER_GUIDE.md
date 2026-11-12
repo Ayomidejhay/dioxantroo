@@ -81,6 +81,13 @@ src/
 | `icon` | `string` | **Required** | Icon name resolved by `IconResolver` |
 | `metricsHighlight` | `string` | `undefined` | Key benchmark stat (e.g. `38ms proofs`) |
 
+### 3.4 `ProjectOverviewObjective`
+| Prop | Type | Default | Description |
+| :--- | :--- | :--- | :--- |
+| `initialPillar` | `'performance' \| 'conversion' \| 'micro-interactions' \| 'accessibility' \| 'scalability'` | `'performance'` | Default active architectural pillar |
+| `onVerify` | `(pillarId: ObjectiveKey) => Promise<boolean>` | `undefined` | Custom async telemetry verification handler |
+| `simulateFailureDefault` | `boolean` | `false` | Default failure simulation toggle state |
+
 ---
 
 ## 4. Local Environment Setup & Run Guide
