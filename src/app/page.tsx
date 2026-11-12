@@ -2,7 +2,8 @@ import React from "react";
 import { Navbar } from "@/components/organisms/Navbar";
 import { HeroSection } from "@/components/organisms/HeroSection";
 import { ProjectOverviewObjective } from "@/components/organisms/project-overview-objective";
-import { ArchitecturalBriefSection } from "@/components/organisms/ArchitecturalBriefSection";
+import { DioxantroIsEnvisioned } from "@/components/organisms/dioxantro-is-envisioned";
+import { ArchitecturalBriefDioxantro } from "@/components/organisms/architectural-brief-dioxantro";
 import { MetricsBar } from "@/components/organisms/MetricsBar";
 import { BentoFeatures } from "@/components/organisms/BentoFeatures";
 import { ArchitectureSection } from "@/components/organisms/ArchitectureSection";
@@ -25,8 +26,11 @@ export default function HomePage() {
         {/* Milestone: End-to-end interactive Project Overview & Objective */}
         <ProjectOverviewObjective />
 
-        {/* Complete implementation of Architectural Brief: Dioxantro Landing Page */}
-        <ArchitecturalBriefSection />
+        {/* Full delivery of 'Dioxantro is envisioned as a high' */}
+        <DioxantroIsEnvisioned />
+
+        {/* Architectural Brief: Dioxantro Landing Page */}
+        <ArchitecturalBriefDioxantro />
 
         {/* Enterprise Metrics Bar */}
         <MetricsBar />
