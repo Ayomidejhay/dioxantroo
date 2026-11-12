@@ -103,3 +103,4 @@ export function verifyDioxantroEnvisioned(
     pillarsCount: Object.keys(spec.pillars).length,
   };
 }
+
