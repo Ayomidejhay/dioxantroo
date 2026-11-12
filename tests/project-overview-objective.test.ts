@@ -4,7 +4,7 @@ import assert from "node:assert/strict";
 import {
   OBJECTIVE_PILLARS,
   ProjectOverviewStateMachine,
-} from "../src/lib/projectOverview.ts";
+} from "../src/lib/project-overview-objective.ts";
 
 describe("Project Overview & Objective — End-to-End Test Suite", () => {
   describe("1. Pillar Data Integrity & Project Brief Alignment", () => {

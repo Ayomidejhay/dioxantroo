@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar } from "@/components/organisms/Navbar";
 import { HeroSection } from "@/components/organisms/HeroSection";
-import { ProjectOverviewObjective } from "@/components/organisms/ProjectOverviewObjective";
+import { ProjectOverviewObjective } from "@/components/organisms/project-overview-objective";
 import { ArchitecturalBriefSection } from "@/components/organisms/ArchitecturalBriefSection";
 import { MetricsBar } from "@/components/organisms/MetricsBar";
 import { BentoFeatures } from "@/components/organisms/BentoFeatures";
