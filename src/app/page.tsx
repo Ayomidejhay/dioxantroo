@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "@/components/organisms/Navbar";
 import { HeroSection } from "@/components/organisms/HeroSection";
+import { ProjectOverviewObjective } from "@/components/organisms/ProjectOverviewObjective";
 import { MetricsBar } from "@/components/organisms/MetricsBar";
 import { BentoFeatures } from "@/components/organisms/BentoFeatures";
 import { ArchitectureSection } from "@/components/organisms/ArchitectureSection";
@@ -12,13 +13,16 @@ import { Footer } from "@/components/organisms/Footer";
 export default function HomePage() {
   return (
     <div className="relative min-h-screen bg-slate-950 text-slate-100 flex flex-col selection:bg-cyan-500/30 selection:text-white">
-      {/* Top Navbar */}
+      {/* Top Sticky Navbar */}
       <Navbar />
 
-      {/* Main Landmark */}
+      {/* Main Semantic Landmark */}
       <main className="flex-1">
         {/* Hero Section with Live Telemetry */}
         <HeroSection />
+
+        {/* Milestone: End-to-end interactive Project Overview & Objective */}
+        <ProjectOverviewObjective />
 
         {/* Enterprise Metrics Bar */}
         <MetricsBar />
@@ -39,7 +43,7 @@ export default function HomePage() {
         <CtaSection />
       </main>
 
-      {/* Semantic Footer */}
+      {/* Semantic Footer Landmark */}
       <Footer />
     </div>
   );
